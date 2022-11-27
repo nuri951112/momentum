@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>나만의 동기부여 홈화면 만들기</title>
+
+    <script src="index.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-image: url("https://media.timeout.com/images/105211701/image.jpg");
+            background-position: center;
+            background-repeat:no-repeat;
+            background-size: 100%;
+            
+            color:white;
+
+        }
+
+        .time{
+            font-size: 80px;
+            font-weigth: bold;
+
+        }
+
+        .greeting {
+            font-size: 50px;
+        }
+
+        .todo {
+            font-size: 30px;
+        }
+
+        .author {
+            font-size: 25px;
+            font-style:italic;
+
+        }
+
+        .main {
+            width: 100vw;
+            height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .quote {
+            width: 100vw;
+            height: 40vh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+
+    <script>
+    </script>
+</head>
+
+<body>
+   <div class="main">
+        <div id="time" class="time"> 12:00 </div>
+        <div class="greeting"> Hello, Nuri! </div>
+        <div class="todo"> 독서하기 </div>
+   </div>
+   <div class="quote"> 
+     <div  id="author" class="author"> -- 아리스토텔레스 -- </div>
+     <div id="content" class="content"> " 같은 강물에 발을 두 번 담글 수는 없다 " </div>
+    </div>
+
+</body>
+
+</html>
